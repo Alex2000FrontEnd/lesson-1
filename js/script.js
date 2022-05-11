@@ -12,7 +12,11 @@ const personalMovieDB = {
 
 const answersQuestion = prompt('Один из последних просмотренных фильмов?', '');
 const answersGrade = prompt('На сколько оцените его?', '');
+const answersQuestionTwo = prompt('Один из последних просмотренных фильмов?', '');
+const answersGradeTwo = prompt('На сколько оцените его?', '');
 
 personalMovieDB.movies[answersQuestion] = answersGrade;
+personalMovieDB.movies[answersQuestionTwo] = answersGradeTwo;
+
 
 console.log(personalMovieDB);
