@@ -32,4 +32,14 @@ for (let i = 0; i < 2; i++) {
     personalMovieDB.movies[answersQuestion] = answersGrade;
 }
 
+if (personalMovieDB.count < 10) {
+    alert('Просмотренно довольно мало фильмов');
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count <= 30) {
+    alert('Вы классический зритель');
+} else if (personalMovieDB.count > 30) {
+    alert('Вы киноман');
+} else {
+    console.log('Произошла ошибка');
+}
+
 console.log(personalMovieDB);
